@@ -7,6 +7,12 @@
     font-family: 'Lato','Noto Sans KR',Verdana,Dotum,AppleGothic,sans-serif;
     scroll-behavior: smooth;
 }
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 a{text-decoration:none;}
 ol,ul{list-style:none;}
 .toggle{
@@ -30,7 +36,7 @@ ol,ul{list-style:none;}
 
 
 
-#section{
+section{
     padding:100px;
     min-height: 100vh;
 }
@@ -263,7 +269,6 @@ ol,ul{list-style:none;}
     transition: 0.5s;
 }
 .work{
-    margin:0 30px;
 }
 .work .content{
     display: flex;
@@ -316,14 +321,11 @@ ol,ul{list-style:none;}
 }
 
 .contact{
-    margin-top:100px;
     background: #D3AFD0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:800px;
-
 }
 .contact .contactForm{
     position: relative;
@@ -359,7 +361,6 @@ ol,ul{list-style:none;}
 }
 .contact .contactForm .row textarea{
     height: 100px;
-
 }
 .contact .contactForm .row input[type="submit"]{
     background:#4B6032;
@@ -367,7 +368,89 @@ ol,ul{list-style:none;}
     padding:10px 30px;
     display: inline-block;
     font-weight: 500;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     max-width:150px;
     cursor: pointer;
+}
+.contactForm{
+    width:100%;
+}
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in;
+}
+
+@media(max-width:991px){
+    .banner .imgSlider{
+        display:none;
+    }
+
+    .banner .contentBx, .sidebar{
+        width:100%;
+        padding:40px;
+    }
+    .logoText{
+        left: 40px;
+    }
+    .toggle{
+        right: 40px;
+    }
+    .sci{
+        left: 40px;
+    }
+    section{
+        padding: 40px;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .about .content .textBx{
+        min-width: 100%;
+        width: 100%;
+    }
+    .about .content .imgBx{
+        margin-top: 20px;
+    }
+    .about .content{
+        margin-top: 0px;
+    }
+    .services .content .servicesBx{
+        padding: 30px 20px;
+        max-width: 340px;
+        margin: 10px;
+    }
+    .contact .contactForm{
+        width:100%;
+    }
+    .contactForm .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .contactForm .row .col50{
+        width: 100%;
+    }
+    .sidebar ul li a{
+        font-size:1.5em;
+    }
+}
+
+@media (max-width:500px){
+    .services .content .servicesBx,
+    .work .content .workBx
+    {
+        padding: 30px 20px;
+        max-width: 100%;
+        width: 100%;
+        margin: 10 0px;
+    }
+
+
 }
