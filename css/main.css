@@ -236,7 +236,7 @@ section{
     flex-wrap: wrap;    
 }
 .services .content .servicesBx{
-
+    box-sizing: border-box;
     padding: 40px 20px;
     max-width: 340px;
     margin: 20px;
@@ -268,8 +268,7 @@ section{
     color:#fff;
     transition: 0.5s;
 }
-.work{
-}
+
 .work .content{
     display: flex;
     justify-content: center;
