@@ -316,11 +316,13 @@ ol,ul{list-style:none;}
 }
 
 .contact{
+    margin-top:100px;
     background: #D3AFD0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height:800px;
 
 }
 .contact .contactForm{
@@ -354,4 +356,18 @@ ol,ul{list-style:none;}
     color:#333;
     font-size:16px;
     resize:none;
+}
+.contact .contactForm .row textarea{
+    height: 100px;
+
+}
+.contact .contactForm .row input[type="submit"]{
+    background:#4B6032;
+    color:#fff;
+    padding:10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2;
+    max-width:150px;
+    cursor: pointer;
 }
