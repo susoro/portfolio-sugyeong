@@ -281,6 +281,7 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .services .content .servicesBx {
@@ -294,7 +295,7 @@ section {
 }
 
 .services .content .servicesBx:hover {
-    background-color: #D3AFD0;
+    background-color: #333;
 }
 
 .services .content .servicesBx img {
@@ -302,10 +303,10 @@ section {
     transition: 0.5s;
 }
 
-.services .content .servicesBx:hover img {
+/* .services .content .servicesBx:hover img {
     filter: invert(1);
 
-}
+} */
 
 .services .content .servicesBx h2 {
     margin-top: 20px;
