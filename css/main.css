@@ -208,7 +208,12 @@ section {
     width: 100%;
     text-align: center;
 }
-
+.title .myworks{
+    font-size: 2.250em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
 .title h2 {
     padding-top: 30px;
     position: relative;
@@ -362,7 +367,7 @@ section {
 }
 
 .work .content .workBx .textBx {
-    background-color: rgb(160, 179, 222,0.9);
+    background-color: rgb(51, 51, 51,0.9);
     opacity: 0;
     transition: 0.5s;
 }
@@ -377,9 +382,20 @@ section {
     letter-spacing: 1px;
     font-size: 1em;
 }
+.work .content .workBx .textBx p{
+    margin-top: 20px;
+    line-height: 1;
+    font-size: 0.875em;
+    color: #fff;
+}
+.work .content .workBx .textBx span{
+    margin-top: 5px;
+    font-size: 0.875em;
+    color: #fff;
+}
 
 .contact {
-    background: #D3AFD0;
+    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
