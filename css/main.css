@@ -362,7 +362,7 @@ section {
 }
 
 .work .content .workBx .textBx {
-    background-color: #000;
+    background-color: rgb(160, 179, 222,0.9);
     opacity: 0;
     transition: 0.5s;
 }
