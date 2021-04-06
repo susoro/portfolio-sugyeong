@@ -1,9 +1,0 @@
-@charset "utf-8";
-*{ margin:0 auto; padding:0;}
-body{
-}
-img{
-    display: flex;
-    justify-content: center;
-    max-width: 90%;
-}
