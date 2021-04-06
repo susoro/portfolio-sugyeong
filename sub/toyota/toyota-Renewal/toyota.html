@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favi.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/common.js"></script>
+    <title>TOYOTA-RENEWAL</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- gnb -->
+        <header id="navbar">
+            <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a>
+            </div>
+            <ul class="navbar-gnb-list">
+                <li class="navbar-list navbar-remove"><a href="#">MODELS</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">DEALERS</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">TOYOTA</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
+                <li><a href="#"><img src="./img/common/navbar.png" alt="navbar"></a></li>
+            </ul>
+            <div class="toggle"></div>
+        </header>
+
+
+        <section id="main_visual">
+            <ul class="mv">
+                <li class="mv1">
+                    <div class="txt">
+                        <h2 class="text">AVALON</h2>
+                        <div class="main_visual-line"></div>
+                        <div class="numbertext">
+                            <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mv2">
+                    <div class="txt">
+                        <h2 class="text">Highlander</h2>
+                        <div class="main_visual-line"></div>
+                        <div class="numbertext">
+                            <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mv3">
+                    <div class="txt">
+                        <h2 class="text3">2021 MIRAI</h2>
+                        <div class="line03"></div>
+                        <div class="numbertext">
+                            <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="toyota-models">
+            <div class="models-menu">
+                <h2>TOYOTA MODELS</h2>
+                <div class="models-nav-menu slideList">
+
+                    <div class="btn-box">
+                        <button id="btn1" onclick="open2021Mirai()">2021 MIRAI<br><img
+                                src="./img/main/2021 MIRAI-side.png" alt="2021MIRAI"></button>
+
+                        <button id="btn2" onclick="openAvalon()">Avalon<br><img src="./img/main/avalonhybrid-side.png"
+                                alt="avalonhybrid"></button>
+
+                        <button id="btn3" onclick="openHighlander()">Highlander<br><img
+                                src="./img/main/highlander-side.png" alt="Highlander"></button>
+
+                        <!-- <button id="btn4" onclick="openCamary()">Camary<br><img src="./img/main/camry-side.png"
+                                alt="Camary"></button> -->
+                    </div>
+
+
+
+                    <div id="content1" class="models-content">
+                        <img src="./img/main/2021 MIRAI -left.png" alt="MIRAI">
+                    </div>
+
+                    <div id="content2" class="models-content">
+                        <img src="./img/main/AVALON-left.png" alt="AVALON">
+                    </div>
+
+                    <div id="content3" class="models-content">
+                        <img src="./img/main/HIGHLANDER-left.png" alt="HIGHLANDER">
+                    </div>
+
+                    <!-- <div id="content4" class="content">
+                        <img src="./img/main/CAMARY-left.png" alt="CAMARY">
+                    </div> -->
+
+                </div>
+            </div>
+
+
+            <div class="description">
+                <div><img src="./img/main/innovation is power.png" alt="innovation"></div>
+                <div class="description-title">
+                    <h3>2021 MIRAI</h3>
+                    <p>Innovation is power.</p>
+                </div>
+            </div>
+
+            <div class="description-main">
+                <div class="description-01">
+                    <div class="description-left">
+                        <span>New fuel cell system</span>
+                        <p>
+                            차량의 모든 시스템은 큰 효율성을 달성하기 위해 설계하고<br>
+                            향상된 출력과 더 나은 연비 ,긴 주행 ​​거리를 제공합니다.<br>
+                            운전 중 연료 계통은 흡입 공기에서 미립자를 걸러내어<br>
+                            깨끗한 공기로 만들어 줍니다
+                        </p>
+                    </div>
+                    <div class="description-right">
+                        <video muted autoplay loop width="100%">
+                            <source src="video/fuelcell-system.mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="description-02">
+                    <div class="description-left">
+                        <img src="./img/main/interior.png" alt="mirai-interior">
+                    </div>
+                    <div class="description-right-text">
+                        <span>Interior and exterior design</span>
+                        <p>
+                            좌측에서 우측으로 수평축을 강조한 센터페시아는<br>
+                            운전자로 하여금 높은 개방감과 넓은 시인성을 제공하며,<br>
+                            인스트루먼트 패널의 레이아웃은 운전석과 동반석을<br>
+                            명확하게 구분하여, 상호 독립적인 공간을 제공합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="description-03">
+                    <div class="description-left">
+                        <span>Driving performance</span>
+                        <p>
+                            더 단단한 샤시와 최적화된 새로운 플랫폼은<br>
+                            반응성이 뛰어난 핸들링, 부드러운 주행 성능 및<br>
+                            놀랍도록 조용하고 편안한 승차감을 제공합니다
+                        </p>
+                    </div>
+                    <div class="description-right">
+                        <video muted autoplay loop width="795" height="485">
+                            <source src="video/driving-performance.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="customise">
+            <h2>CUSTOMISE</h2>
+            <div class="customise-wrap">
+                <div class="customise-lists-wrap">
+                    <div class="customise-list-line"></div>
+                    <ul class="customise-lists">
+                        <li class="on"><a href="#">2021 MIRAI</a></li>
+                        <li><a href="#">HIGHLANDER</a></li>
+                        <li><a href="#">AVALON</a></li>
+                        <li><a href="#">CAMARY</a></li>
+                    </ul>
+
+                    <div class="customise-carimg selected">
+                        <ul>
+                            <!-- <li class="one"><a href="#"><img src="./img/main/custom-bk.png"
+                                        alt="2021 MIRAI"></a></li> -->
+
+                            <li class="two"><a href="#"><img class="two" src="./img/main/custom-blue.png"
+                                        alt="2021 MIRAI"></a></li>
+
+                            <!-- <li class="three"><a href="#"><img class="three" src="./img/main/custom-red.png"
+                                        alt="2021 MIRAI"></a></li>
+
+                            <li class="four"><a href="#"><img class="four" src="./img/main/custom-grey.png"
+                                        alt="2021 MIRAI"></a></li> -->
+                        </ul>
+                    </div>
+
+                    <div class="customise-description">
+                        <div class="customise-price">
+                            <span>47,020,000₩</span><br>
+                            <p>연비:9.5km/ℓ</p>
+                        </div>
+                        <div class="customise-MPGe">
+                            <span>67/64</span><br>
+                            <p>est.MPGe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customise-color">
+                    <a href="#" class="black">color1</a>
+                    <a href="#" class="red">color2</a>
+                    <a href="#" class="blue">color3</a>
+                    <a href="#" class="grey">color4</a>
+                </div>
+
+                <ul class="customise-icon">
+                    <li><img src="./img/main/custom-bg1.png" alt="icon">
+                        <a href="#">브로셔 다운로드</a>
+                    </li>
+                    <li><img src="./img/main/custom-bg2.png" alt="icon"><a href="#">내 토요타만들기</a></li>
+                    <li><img src="./img/main/custom-bg3.png" alt="icon"><a href="#">전시장 찾기</a></li>
+                    <li><img src="./img/main/custom-bg4.png" alt="icon"><a href="#">시승 신청하기</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="brandstory">
+            
+            <div class="movie_area">
+            <h2>BRANDSTORY</h2>
+            <video muted autoplay loop>
+                <source src="./video/toyota-brand.mp4">
+            </video>
+            </div>
+
+            <div class="brandstory-description">
+                <div>
+                    <p>
+                        자신만의 스타일이 뚜렷한 고객들의 라이프 스타일을<br>
+                        토요타와 함께 더욱 즐겁고 다채롭게<br>
+                        만들 수 있도록 최적의 상품과 서비스를 제공하는 것이<br>
+                        한국 토요타 자동차의 목표입니다.
+                    </p>
+                </div>
+                <div> <img src="./img/main/brandstory.png" alt="brandstory"></div>
+            </div>
+        </section>
+
+        <div id="event-footer-wrap">
+            <h2>EVENT &amp; SERVICE</h2>
+
+            <form method="get" class="form-layout">
+                <fieldset>
+                    <p>가까운 토요타 전시장에서 시승 이벤트 및 차량 소개 이벤트를 알아보세요</p>
+                    <div class="input-layout-box">
+                        <input type="text" name="search" placeholder="Search"
+                            aria-label="type here to search the toyota dealers">
+                        <label for="search"></label><br>
+                        <input type="image" src="img/common/view-more.png" alt="Submit feedback" class="form-input-searchicon">
+                        <label for="image"></label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <footer id="footer">
+                <div class="footer-inner">
+                    <img src="./img/common/footer-logo.png" alt="toyota">
+                    <div class="footer-inner-desc">
+                        <p>이용약관 | 개인정보 처리방침 | CONTACT US | 긴급 출동 서비스 080-525-8255</p>
+                        <address>
+                            사업자: 한국토요타자동차㈜ | 대표: TAKEMURA NOBUYUKI | 사업자등록번호: 120-86-00915 |<br>
+                            주소: 서울특별시 강남구 논현로 508 7층 (역삼동, GS강남타워)
+                        </address>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img src="./img/common/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="./img/common/youtube.png" alt="youtube"></a>
+                        <a href="#"><img src="./img/common/instagram.png" alt="instargram"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+    <script>
+        
+      
+        
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+
+
+        function open2021Mirai() {
+            content1.style.transform = "translateX(-50%)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(300%)";
+            content4.style.transform = "translateX(300%)";
+            btn1.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openAvalon() {
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(-50%)";
+            content3.style.transform = "translateX(300%)";
+            content4.style.transform = "translateX(300%)";
+            btn2.style.color = "#000"
+            btn1.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content2.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openHighlander() {
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(-50%)";
+            content4.style.transform = "translateX(300%)";
+            btn3.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn1.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content3.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openCamary() {
+            content1.style.transform = "translateX(200%)";
+            content2.style.transform = "translateX(200%)";
+            content3.style.transform = "translateX(200%)";
+            content4.style.transform = "translateX(-50%)";
+            btn4.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn1.style.color = "#ddd"
+            content4.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+    </script>
+</body>
+
+</html>
