@@ -148,7 +148,7 @@ section {
     background:#adb9f5;
 }
 .home-btn{background:#adb9f5;}
-
+.home-btn:hover{background:#9b9bf1;}
 .sidebar {
     position: fixed;
     background-color: #ddd;
@@ -183,7 +183,7 @@ section {
 }
 
 .sidebar ul li a:hover {
-    color: #C98BFF;
+    color: #9b9bf1;
 }
 
 .sci {
