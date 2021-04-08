@@ -1,14 +1,16 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-y: auto; overflow-x: hidden;
+}
 button {
     background: transparent;
     cursor: pointer;
@@ -106,7 +108,7 @@ section {
 .banner .contentBx h2 {
     font-size: 3em;
     color: #333;
-    line-height: 1em;
+    line-height: 1.5em;
 }
 
 .banner .contentBx p {
@@ -231,8 +233,14 @@ section {
     font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
+    
 }
-
+h3{
+    margin-top: 50px;
+    font-weight:600;
+    font-size: 1.7em;
+    color: rgb(0, 0, 0,0.8);
+}
 .white,
 .white p {
     color: #000;
@@ -252,7 +260,7 @@ section {
     bottom: -10px;
     width: 60px;
     height: 2px;
-    background: #fff;
+    background: #333;
 }
 
 .title .white::before {
@@ -277,11 +285,13 @@ section {
 }
 .about .content .textBx span {
     font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
 }
 .about .content .textBx p {
     margin-top: 8px;
     padding-left: 15px;
-    color: rgb(51, 51, 51,0.8);
+    color: rgb(51,51,51,0.7);
 }
 .about .content .textBx .textBx-list{
     margin-bottom: 10px;
@@ -293,11 +303,10 @@ section {
 
 .about .content .imgBx img {
     max-width: 100%;
-    margin-bottom: 120px;
 }
 
 .services .content {
-    display: flex;
+    
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -305,28 +314,36 @@ section {
 }
 
 .services .content .servicesBx {
+    display: flex;
     box-sizing: border-box;
     padding: 40px 20px;
-    max-width: 340px;
     margin: 20px;
     transition: 0.5s;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #fff;
+    align-items: center;
 }
 
 .services .content .servicesBx:hover {
-    background-color: #333;
+    background-color: #f5f5f5;
 }
 
 .services .content .servicesBx img {
-    max-width: 80px;
     transition: 0.5s;
 }
-
-/* .services .content .servicesBx:hover img {
-    filter: invert(1);
-
-} */
+.servicesBx-slogo img{
+    display: none;
+}
+.servicesBx-desc-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3D4474;
+    margin-bottom: 10px;
+    
+}
+.servicesBx-desc a{
+    text-decoration: none; outline: none;
+}
 
 .services .content .servicesBx h2 {
     margin-top: 20px;
@@ -338,7 +355,7 @@ section {
 
 .services .content .servicesBx:hover h2,
 .services .content .servicesBx:hover p {
-    color: #fff;
+    color: rgb(51, 51, 51,0.8);
     transition: 0.5s;
 }
 
@@ -441,33 +458,15 @@ section {
     text-align: center;
 }
 
-.contact .contactForm .row input,
-.contact .contactForm .row textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: #fefefe;
-    color: #333;
-    font-size: 16px;
-    resize: none;
+
+.contact-mail{
+    font-size: 1.5em;
 }
 
-.contact .contactForm .row textarea {
-    height: 100px;
+.contact-mobile{
+    margin-top: 8px;
+    font-size: 1.5em;
 }
-
-.contact .contactForm .row input[type="submit"] {
-    background: #4B6032;
-    color: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    font-weight: 500;
-    letter-spacing: 2px;
-    max-width: 150px;
-    cursor: pointer;
-}
-
 .contactForm {
     width: 100%;
 }
@@ -526,14 +525,17 @@ section {
 
     .about .content {
         margin-top: 0px;
+        display: flex;
     }
 
     .services .content .servicesBx {
+        display: flex;
         padding: 30px 20px;
-        max-width: 340px;
+        max-width: 740px;
         margin: 10px;
+        flex-direction: column;
+        align-items: center;
     }
-
     .contact .contactForm {
         width: 100%;
     }
