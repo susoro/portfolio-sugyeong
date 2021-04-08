@@ -268,7 +268,7 @@ h3{
 }
 
 .about {
-    background: #A0B3DE;
+    background: linear-gradient(#e66465, #A0B3DE);
 }
 
 .about .content {
