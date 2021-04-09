@@ -8,6 +8,7 @@
     font-family: 'Montserrat', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
     scroll-behavior: smooth;
 }
+
 body{
     overflow-y: auto; overflow-x: hidden;
 }
@@ -25,6 +26,18 @@ a {
 ol,
 ul {
     list-style: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .toggle {
@@ -56,17 +69,24 @@ section {
     min-height: 100vh;
 }
 
-.banner {
+/* .banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
-}
+} */
 
+
+.banner{
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+
+}
 .banner .imgSlider {
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
+    /* width: 500px; */
     height: 100%;
 }
 
@@ -85,7 +105,8 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 500px);
+    /* width: calc(100% - 500px); */
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -95,20 +116,22 @@ section {
 
 .banner .contentBx h4 {
     font-size: 1.5em;
-    color: #333;
+    color: #fff;
     font-weight: 300;
 }
 
 .banner .contentBx h4 span {
-    color: #000;
+    color: #fff;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .banner .contentBx h2 {
     font-size: 3em;
-    color: #333;
+    font-weight: 500;
+    color: #fff;
     line-height: 1.5em;
+    letter-spacing: -3px;
 }
 
 .banner .contentBx p {
@@ -123,22 +146,27 @@ section {
     left: 50px;
     box-sizing: border-box;
     font-size: 1.2em;
-    background: #333;
+    background: rgb(51, 51, 51,0.5);
     padding: 3px 15px;
 
     color: #fff;
 }
 .banner .logoText-desc{
     position: absolute;
-    left: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     box-sizing: border-box;
     font-size: 1em;
-    
+    text-align: center;
+}
+.banner .logoText-desc p{
+    color: rgb(255, 255, 255,0.8);
 }
 
 .btn {
-    background:#4a7ca9;
+    background:rgba(51, 51, 51,0.5);
     color: #fff;
+    margin-top: 15px;
     padding: 10px 30px;
     display: inline-block;
     text-decoration: none;
@@ -147,10 +175,11 @@ section {
 
 }
 .btn:hover{
-    background:#5398ba;
+    background:rgba(51, 51, 51,0.85);
 }
 .home-btn{background:#4a7ca9;}
 .home-btn:hover{background:#5398ba;}
+
 .sidebar {
     position: fixed;
     background-color: #ddd;
@@ -178,7 +207,7 @@ section {
     color: #333;
     font-size: 2em;
     margin: 10px 0;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 1.5;
 
@@ -190,7 +219,8 @@ section {
 
 .sci {
     position: absolute;
-    left: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 20px;
     display: flex;
     justify-content: center;
@@ -268,7 +298,7 @@ h3{
 }
 
 .about {
-    background:linear-gradient(to right, #5398BA, #71BDE3);
+    background:#f5f5f5;
 }
 
 .about .content {
@@ -285,16 +315,16 @@ h3{
 }
 .about .content .textBx span {
     font-size: 1.2em;
-    color: #333;
+    color: #000;
     font-weight: 500;
 }
 .about .content .textBx p {
     margin-top: 8px;
     padding-left: 15px;
-    color: rgb(51, 51, 51,0.7);
+    color: rgb(0, 0,0,0.7);
 }
 .about .content .textBx .textBx-list{
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .about .content .imgBx {
     margin-left: 40px;
@@ -322,7 +352,7 @@ h3{
     text-align: center;
     background-color: #fff;
     align-items: center;
-    
+    height: 109.284vh;
 }
 
 .services .content .servicesBx:hover {
@@ -336,6 +366,7 @@ h3{
     display: none;
 }
 .servicesBx-desc{
+    text-align: center;
     margin-left: 30px;
 }
 .servicesBx-desc-title{
@@ -539,6 +570,7 @@ h3{
         margin: 10px;
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
     .contact .contactForm {
         width: 100%;
