@@ -1,2 +1,0 @@
-# toyota-Renewal
-TOYOTA-redesign 
