@@ -171,7 +171,6 @@ section {
 .banner .logoText-desc p{
     transform: translateY(6rem);
 	animation: up 800ms linear forwards;
-    text-shadow: 0px 1px 1px rgba(255,255,255,1);
 }
 .banner .logoText-desc p{
     color: rgb(255, 255, 255,0.8);
