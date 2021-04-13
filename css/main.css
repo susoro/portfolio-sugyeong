@@ -169,6 +169,7 @@ section {
 .banner .logoText-desc p{
     transform: translateY(6rem);
 	animation: up 800ms linear forwards;
+    letter-spacing: -1px;
 }
 .banner .logoText-desc p{
     color: rgb(255, 255, 255,0.8);
