@@ -26,5 +26,6 @@ a:hover, a:active {text-decoration: none; color: #fff;}
 .sellpy-menu-lists a:hover{color: rgb(51, 51, 51,0.8);}
 
 
-
+.sellpy-menu-section{position: relative;}
 .sellpy-menu-section img{position:relative; max-width:100%; height:auto;}
+.sellpy-menu-section h2{ text-align: center; font-size: 80px;}
