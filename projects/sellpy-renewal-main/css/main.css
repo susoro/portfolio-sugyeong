@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url("./remove.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{font-family: 'Montserrat','Noto Sans KR', sans-serif;}
+
+
+a {text-decoration: none; outline: none; color: #fff;}
+a:hover, a:active {text-decoration: none; color: #fff;}
+
+
+/* until */
+.util-lists-wrap{background:#333;box-sizing: border-box;}
+.util-lists{margin-right: 240px;display: flex;justify-content: flex-end;align-items: center;}
+.util-lists li{display: flex;margin-right: 15px;font-size:13px;padding: 10px;}
+.util-lists li:nth-child(3),
+.util-lists li:nth-child(4){align-items: center;z-index: 1;margin-right: 0;padding-right: 0;}
+.util-lists-bg{height: 44px;width: 120px;background-color: #0662c7;position: absolute;right: 220px;top: 0;}
+
+
+/* navi-lists */
+.sellpy-menu{width: 77%;display: flex; justify-content: space-between; align-items: center;margin:30px auto;}
+.sellpy-menu-lists{display: flex;}
+.sellpy-menu-lists li{margin-left: 30px; font-weight: 400; font-size:14px;}
+.sellpy-menu-lists a{color: #333;}
+.sellpy-menu-lists a:hover{color: rgb(51, 51, 51,0.8);}
+
+
+/* sellpy-mainvisual */
+.sellpy-mainvisual{display: flex; align-items: center; justify-content: space-between;}
+.sellpy-mainvisual img{width: 80%; z-index: -9; position: relative; top:-90px;}
+.sellpy-mainvisual-desc{text-align: center; z-index:9; position: relative; left:-250px;}
+.sellpy-mainvisual-desc h2{font-size: 3.0em; color: #0662c7; margin-bottom:20px}
+.desc-redline{width: 130px; height: 9px; background-color:#d14124;}
+.sellpy-mainvisual-desc p{font-size: 1.2em; margin-bottom: 25px; letter-spacing: -0.3px;}
+.sellpy-mainvisual-desc span{text-decoration: line-through; text-decoration-color: #d14124; text-decoration-thickness: 7px;}
+.sellpy-mainvisual-desc button{border-style: none;padding: 10px 30px;
+font-size: 1em; border: 1px solid #333; background:none; cursor: pointer;transition:.3s;}
+.sellpy-mainvisual-desc button:hover{ color: rgb(51, 51, 51,0.8);}
+
+
+/* sellpy-products */
+.sellpy-contents{position: relative; margin:0 auto;}
+.gray-line{border: 0.2px solid #eee; margin:66px 0}
+.sellpy-contents-wrap{display: flex; justify-content: center}
+.sellpy-content{position:relative; max-width:100%; height:auto;}
+.sellpy-content-text{position:absolute; text-align:center;width:100%; height:100%; color:#fff; top:50%; opacity:0; transition:.5s;}
+.sellpy-content-text p{font-size:1.3em;}
+.sellpy-content-text span{ font-size:2em;}
+.hover-space:hover .sellpy-content-text{opacity: 1;}
+.sellpy-content{display: flex;}
+
+.sellpy-content:nth-child(1),.sellpy-content:nth-child(2){justify-content: space-between;}
+.sellpy-content:nth-child(5),.sellpy-content:nth-child(6){justify-content:space-between;}
+.up{margin-top: 20px;}
+.sellpy-content-divide{margin: 0 10px;}
+
+
+
+/*sellpy-lookbook */
+.sellpy-lookbook {display: flex; text-align: center;}
+.sellpy-lookbook img{max-width:90%; height:auto;}
+.sellpy-lookbook-list{text-align: right; position:relative; top: -130px; right:50px}
+.sellpy-lookbook-mens:hover .sellpy-lookbook-list{display: block;}
+.sellpy-lookbook-women:hover .sellpy-lookbook-list{display: block;}
+.sellpy-lookbook h3{font-size: 1.7em;}
+.sellpy-lookbook button{border-style: none;padding: 5px 30px;
+    font-size: 1em; border: 1px solid #333; background:none; cursor: pointer;transition:.3s; margin-top:10px;}
+.sellpy-lookbook button:hover{background-color:whitesmoke;}
+.sellpy-lookbook-list{filter: invert(1);}
+
+
+
+/* footer */
+.sellpy-footer{margin-top: 150px; background-color: #f8f8f8; height:40.650vh;}
+.sellpy-footer-lists{display: flex;margin-top: 100px; justify-content: space-between;}
+.sellpy-footer-lists li{margin: 5px 0;}
+.sellpy-footer-inner{display:flex; justify-content: center;}
+.sellpy-footer .sellpy-footer-lists li a{color: #333;}
+.sellpy-footer-inner li{margin-right: 20px;}
+.sellpy-footer-inner li a:hover{color: rgb(51, 51, 51,0.7);}
+.sellpy-sns{display: flex;margin-top: 100px;}
+.sellpy-sns a{margin-right: 10px;}
+.sellpy-sns a:hover {filter: invert(0.5);}

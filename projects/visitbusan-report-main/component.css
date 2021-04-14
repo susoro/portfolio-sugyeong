@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+body{ background-color:#eee;}
+div {
+    text-align: center;
+}
